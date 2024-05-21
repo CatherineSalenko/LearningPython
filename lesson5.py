@@ -5,6 +5,7 @@
 
 
 import math
+import mydefs
 
 def ex_1():
     print("не делаем ")
@@ -119,16 +120,7 @@ def ex_6():
     должна вывести позицию искомого элемента в исходном списке
     """
 
-    list_size = int(input("write list size "))
-    i = 1
-    mass = []
-    while i <= list_size:
-        your_number = int(input("write your number №" + str(i) + " "))
-        mass.append(your_number)
-        i += 1
-
-    print("your list")
-    mass.sort()
+    mass = mydefs.create_sort_mass()
     print(mass)
 
     find_number = int(input("write find number "))
